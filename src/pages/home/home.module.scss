@@ -1,0 +1,31 @@
+.container {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.intro {
+    width: 100%;
+    height: 100vh;
+    background: url(../../assets/images/bg/intro.jpg) center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.intro__inner {
+    display: flex;
+    justify-content: center;
+}
+
+// projects
+.projects {
+    margin-top: 140px;
+}
+
+.projects__inner {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}

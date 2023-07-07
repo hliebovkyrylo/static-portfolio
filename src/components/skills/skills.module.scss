@@ -1,0 +1,23 @@
+.skills {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 851px;
+    justify-content: center;
+    margin: 16px auto 0 auto;
+    position: relative;
+}
+
+.line {
+    content: '';
+    height: 39px;
+    margin-right: auto;
+
+}
+
+.skillname {
+    position: absolute;
+    right: 102%;
+    max-width: 376px;
+    text-align: end;
+}

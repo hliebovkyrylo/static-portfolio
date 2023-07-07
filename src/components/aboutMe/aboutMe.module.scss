@@ -1,0 +1,29 @@
+.aboutMe__text {
+    font-weight: 700;
+    font-size: 20px;
+    color: #000;
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.grades {
+    display: flex;
+    justify-content: space-between;
+    max-width: 851px;
+    margin: 0 auto;
+    border-bottom: 2px solid #000;
+
+    span {
+        color: #000;
+        font-size: 20px;
+        font-weight: 700;
+        border-right: 2px solid #000;
+        padding-right: 6px;
+
+        &:first-child {
+            border-left: 2px solid #000;
+            padding-left: 153px;
+        }
+    }
+}
+

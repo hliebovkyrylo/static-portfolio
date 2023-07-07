@@ -1,0 +1,37 @@
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.info__photo {
+    width: 234px;
+    height: 234px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 59px;
+}
+
+.link {
+    margin-left: 12px;
+
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.info__name {
+    font-weight: 700;
+    font-size: 32px;
+    color: #fff;
+}
+
+.links {
+    margin: 17px 0;
+}
+
+.description {
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    max-width: 350px;
+}

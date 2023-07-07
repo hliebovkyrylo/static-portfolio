@@ -1,0 +1,28 @@
+.project {
+    margin: 40px 75px 0 0;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+
+    &:nth-child(3n),
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.projectImage {
+    width: 400px;
+    height: 250px;
+    background: #fffc3d;
+}
+
+.image {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    transition: .2s linear;
+
+    &:hover {
+        transform: translate(20px, -20px);
+    }
+}
