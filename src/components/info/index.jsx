@@ -18,13 +18,13 @@ export const Info = ({
             <div className={styles.info__description}>
                 <span className={styles.info__name}>{name}</span>
                 <div className={styles.links}>
-                    <a className={styles.link} href="#">
+                    <a target="_blank" className={styles.link} href="https://www.instagram.com/xenoniiii/">
                         <img src={inst} alt="" />
                     </a>
-                    <a className={styles.link} href="#">
+                    <a target="_blank" className={styles.link} href="https://github.com/hliebovkyrylo">
                         <img src={github} alt="" />
                     </a>
-                    <a className={styles.link} href="#">
+                    <a target="_blank" className={styles.link} href="https://t.me/xenoniiii">
                         <img src={tg} alt="" />
                     </a>
                 </div>

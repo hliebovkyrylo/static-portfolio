@@ -1,3 +1,5 @@
+@import '../../components/aboutMe/aboutMe.module.scss';
+
 .container {
     width: 100%;
     max-width: 1350px;
@@ -28,4 +30,38 @@
     display: flex;
     justify-content: start;
     flex-wrap: wrap;
+}
+
+@media (max-width: 1350px) {
+    .projects__inner {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1050px) {
+    .projects__inner {
+        display: block;
+    }
+
+    .container {
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 905px) {
+    .container {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 606px) {
+    .container {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 438px) {
+    .container {
+        max-width: 270px;
+    }
 }

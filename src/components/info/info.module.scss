@@ -35,3 +35,14 @@
     color: #fff;
     max-width: 350px;
 }
+
+@media (max-width: 678px) {
+    .info {
+        display: block;
+        text-align: center;
+    }
+
+    .info__photo {
+        margin: 0;
+    }
+}

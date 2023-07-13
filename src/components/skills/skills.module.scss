@@ -20,4 +20,38 @@
     right: 102%;
     max-width: 376px;
     text-align: end;
+    color: #000;
+}
+
+@media (max-width: 1050px) {
+    .skills {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 674px) {
+    .skills {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 568px) {
+    .skills {
+        max-width: 270px;
+    }
+}
+
+@media (max-width: 435px) {
+    .skills {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 350px) {
+    .skillname {
+        right: 0;
+        left: 10%;
+        text-align: start;
+        color: #fff;
+    }
 }

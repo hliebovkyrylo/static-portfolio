@@ -27,3 +27,42 @@
     }
 }
 
+@media (max-width: 1050px) {
+    .grades {
+        max-width: 500px;
+        span:first-child {
+            border-left: 2px solid #000;
+            padding-left: 83px;
+        }
+    }
+}
+
+@media (max-width: 674px) {
+    .grades {
+        max-width: 400px;
+        span:first-child {
+            border-left: 2px solid #000;
+            padding-left: 63px;
+        }
+    }
+}
+
+@media (max-width: 568px) {
+    .grades {
+        max-width: 270px;
+        span:first-child {
+            border-left: 2px solid #000;
+            padding-left: 33px;
+        }
+    }
+}
+
+@media (max-width: 435px) {
+    .grades {
+        max-width: 200px;
+        span:first-child {
+            border-left: 2px solid #000;
+            padding-left: 23px;
+        }
+    }
+}

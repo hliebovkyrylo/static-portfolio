@@ -2,13 +2,19 @@ import React from "react";
 
 import styles from "./home.module.scss";
 
-import { Info, AboutMe, Skills, Project } from "../../components/index";
+import { Info, AboutMe, Skills, Project, Footer } from "../../components/index";
+
 import avatar from "../../assets/images/avatar/photo.jpg";
+import project1 from "../../assets/images/projectsImage/1.jpg";
+import project2 from "../../assets/images/projectsImage/2.jpg";
+import project3 from "../../assets/images/projectsImage/3.jpg";
+import project4 from "../../assets/images/projectsImage/4.jpg";
+import project5 from "../../assets/images/projectsImage/5.jpg";
 
 export const Home = () => {
     return (
         <>
-            <div className={styles.intro}>
+            <div className={styles.intro} id="home">
                 <div className={styles.container}>
                     <div className={styles.intro__inner}>
                         <Info
@@ -20,36 +26,63 @@ export const Home = () => {
                 </div>
             </div>
             <div>
-                <div className={styles.container}>
+                <div className={styles.container} id="about">
                     <h1>About me</h1>
                     <AboutMe 
-                        text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique senectus et netus et malesuada fames ac turpis. Dolor sit amet consectetur adipiscing elit ut aliquam purus. Urna cursus eget nunc scelerisque viverra mauris in aliquam sem. Imperdiet nulla malesuada pellentesque elit. Fringilla urna porttitor rhoncus dolor purus. Nisl suscipit adipiscing bibendum est ultricies integer quis auctor elit. Ut tristique et egestas quis ipsum. Interdum velit laoreet id donec ultrices tincidunt arcu non. Eu consequat ac felis donec et odio. Pellentesque massa placerat duis ultricies lacus sed turpis tincidunt. '}
+                        text={'I am Kyrylo Hliebov, a web developer with experience since autumn 2022. I am 17 years old, successfully graduated from the Verkhnedneprovsky Lyceum №2. I have developed a range of dynamic, static and responsive websites that attract users with their stylish design and functionality. I am proficient in programming languages such as HTML, CSS and JavaScript and have experience with popular frameworks including React and Node js.'}
                     />
-                    {[...Array(4)].map(() => {
-                        return (
-                            <Skills
-                                skillName={'JavaScript'} 
-                                skillGrade={3}
-                            />
-                        )
-                    })}
+                    <Skills
+                        skillName={'HTML'} 
+                        skillGrade={4}
+                    />
+                    <Skills
+                        skillName={'CSS'} 
+                        skillGrade={4}
+                    />
+                    <Skills
+                        skillName={'JavaScript'} 
+                        skillGrade={3}
+                    />
+                    <Skills
+                        skillName={'React'} 
+                        skillGrade={4}
+                    />
+                    <Skills
+                        skillName={'Node.js'} 
+                        skillGrade={3}
+                    />
+                    <h2>Education</h2>
+                    <p className={styles.aboutMe__text}>I independently developed various websites, which helped me consolidate and apply my knowledge in practice. This self-learning path has made me more confident in my skills and allowed me to gain hands-on experience in building web applications. I also took a few courses from ITVDN where I got some more experience.</p>
                 </div>
             </div>
-            <div className={styles.projects}>
+            <div className={styles.projects} id="projects">
                 <div className={styles.container}>
                     <h1>My projects</h1>
                     <div className={styles.projects__inner}>
-                        {[...Array(5)].map(() => {
-                            return (
-                                <Project
-                                    image={'https://img.freepik.com/free-psd/business-company-landing-page-template_23-2148924995.jpg'} 
-                                    projectDescription={'The website was created to develop your own skills'}
-                                />
-                            )
-                        })}
+                        <Project
+                            image={project1} 
+                            projectHref={'https://hliebovkyrylo.github.io/Finsweet/'}
+                        />
+                        <Project
+                            image={project5} 
+                            projectHref={'https://hliebovkyrylo.github.io/upay/'}
+                        />
+                        <Project
+                            image={project4} 
+                            projectHref={'https://spline-pi.vercel.app'}
+                        />
+                        <Project
+                            image={project2} 
+                            projectHref={'#'}
+                        />
+                        <Project
+                            image={project3} 
+                            projectHref={'https://hliebovkyrylo.github.io/Travel-agency/'}
+                        />
                     </div>
                 </div>
             </div>
+            <div id="contact"><Footer></Footer></div>
         </>
     )
 };

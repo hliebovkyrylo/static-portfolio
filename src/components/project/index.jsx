@@ -4,20 +4,16 @@ import styles from "./project.module.scss";
 
 export const Project = ({
     image,
-    projectDescription,
-    projectName,
-    developer,
-    customer,
+    projectHref
 }) => {
-    const isFullProject = false;
 
     return (
-        <>
-            <button className={styles.project}>
+        <div className={styles.pr}>
+            <a target="_blank" href={projectHref} className={styles.project}>
                 <div className={styles.projectImage}>
                     <img className={styles.image} src={image} alt="" />
                 </div>
-            </button>
-        </>
+            </a>
+        </div>
     )
 };

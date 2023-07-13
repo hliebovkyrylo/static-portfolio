@@ -1,8 +1,13 @@
 .project {
-    margin: 40px 75px 0 0;
     padding: 0;
     border: 0;
     cursor: pointer;
+}
+
+.pr {
+    margin: 40px 75px 0 0;
+    width: 400px;
+    height: 250px;
 
     &:nth-child(3n),
     &:last-child {
@@ -24,5 +29,38 @@
 
     &:hover {
         transform: translate(20px, -20px);
+    }
+}
+
+@media(max-width: 1350px) {
+    .pr,
+    .image,
+    .projectImage {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .pr {
+        margin: 30px auto !important;
+    }
+}
+
+@media (max-width: 438px) {
+    .pr,
+    .image,
+    .projectImage {
+        width: 260px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 310px) {
+    .pr,
+    .image,
+    .projectImage {
+        width: 200px;
+        height: 100px;
     }
 }
