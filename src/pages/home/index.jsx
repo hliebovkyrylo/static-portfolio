@@ -10,6 +10,7 @@ import project2 from "../../assets/images/projectsImage/2.jpg";
 import project3 from "../../assets/images/projectsImage/3.jpg";
 import project4 from "../../assets/images/projectsImage/4.jpg";
 import project5 from "../../assets/images/projectsImage/5.jpg";
+import project6 from "../../assets/images/projectsImage/6.png";
 
 export const Home = () => {
     return (
@@ -78,6 +79,10 @@ export const Home = () => {
                         <Project
                             image={project3} 
                             projectHref={'https://hliebovkyrylo.github.io/Travel-agency/'}
+                        />
+                        <Project
+                            image={project6} 
+                            projectHref={'https://hliebovkyrylo.github.io/wedding_website/'}
                         />
                     </div>
                 </div>
